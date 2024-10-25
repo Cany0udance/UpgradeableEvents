@@ -1,13 +1,19 @@
 package upgradeableevents.eventupgrades.Shrines;
 
 import basemod.ReflectionHacks;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.events.AbstractEvent;
 import com.megacrit.cardcrawl.events.shrines.FountainOfCurseRemoval;
+import com.megacrit.cardcrawl.localization.UIStrings;
 import upgradeableevents.interfaces.AbstractEventUpgrade;
 import upgradeableevents.interfaces.UpgradeCondition;
 
+import static upgradeableevents.UpgradeableEvents.makeID;
+
 public class FountainOfCurseRemovalUpgrade extends AbstractEventUpgrade {
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString(makeID("FountainOfCurseRemovalUpgrade"));
     public static final int HP_PER_CURSE = 6;
+    private boolean isUpgraded = false;
 
     public FountainOfCurseRemovalUpgrade(FountainOfCurseRemoval event) {
         super(event, new FountainUpgradeCondition());
@@ -25,8 +31,12 @@ public class FountainOfCurseRemovalUpgrade extends AbstractEventUpgrade {
     @Override
     public void upgrade() {
         if (!canBeUpgraded()) return;
-
+        isUpgraded = true;
         clearAndRebuildOptions();
+    }
+
+    public boolean isUpgraded() {
+        return isUpgraded;
     }
 
     @Override
@@ -34,7 +44,7 @@ public class FountainOfCurseRemovalUpgrade extends AbstractEventUpgrade {
         FountainOfCurseRemoval fountainEvent = (FountainOfCurseRemoval)event;
 
         // Update first option to show max HP gain
-        String upgradeText = FountainOfCurseRemoval.OPTIONS[0] + " Gain #b" + HP_PER_CURSE + " #gMax #gHP for each.";
+        String upgradeText = FountainOfCurseRemoval.OPTIONS[0] + uiStrings.TEXT[0] + HP_PER_CURSE + uiStrings.TEXT[1];
         fountainEvent.imageEventText.setDialogOption(upgradeText);
 
         // Leave option

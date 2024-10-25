@@ -1,12 +1,18 @@
 package upgradeableevents.eventupgrades.Shrines;
 
 import basemod.ReflectionHacks;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.events.AbstractEvent;
 import com.megacrit.cardcrawl.events.shrines.Duplicator;
+import com.megacrit.cardcrawl.localization.UIStrings;
 import upgradeableevents.interfaces.AbstractEventUpgrade;
 import upgradeableevents.interfaces.UpgradeCondition;
 
+import static upgradeableevents.UpgradeableEvents.makeID;
+
 public class DuplicatorUpgrade extends AbstractEventUpgrade {
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString(makeID("DuplicatorUpgrade"));
+    private boolean isUpgraded = false;
     public DuplicatorUpgrade(Duplicator event) {
         super(event, new DuplicatorUpgradeCondition());
     }
@@ -23,8 +29,12 @@ public class DuplicatorUpgrade extends AbstractEventUpgrade {
     @Override
     public void upgrade() {
         if (!canBeUpgraded()) return;
-
+        isUpgraded = true;
         clearAndRebuildOptions();
+    }
+
+    public boolean isUpgraded() {
+        return isUpgraded;
     }
 
     @Override
@@ -32,7 +42,7 @@ public class DuplicatorUpgrade extends AbstractEventUpgrade {
         Duplicator duplicatorEvent = (Duplicator)event;
 
         // Update first option to show double duplication
-        String upgradeText = "[Pray] #gDuplicate #ga #gcard #gin #gyour #gdeck #gtwice.";
+        String upgradeText = uiStrings.TEXT[0];
         duplicatorEvent.imageEventText.setDialogOption(upgradeText);
 
         // Leave option remains the same

@@ -5,16 +5,10 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractEvent;
 import com.megacrit.cardcrawl.events.exordium.Cleric;
-import com.megacrit.cardcrawl.events.shrines.Bonfire;
-import com.megacrit.cardcrawl.events.shrines.Duplicator;
-import com.megacrit.cardcrawl.events.shrines.FountainOfCurseRemoval;
-import com.megacrit.cardcrawl.events.shrines.NoteForYourself;
+import com.megacrit.cardcrawl.events.shrines.*;
 import upgradeableevents.effects.EventUpgradeShineEffect;
-import upgradeableevents.eventupgrades.Shrines.BonfireUpgrade;
+import upgradeableevents.eventupgrades.Shrines.*;
 import upgradeableevents.eventupgrades.ClericEventUpgrade;
-import upgradeableevents.eventupgrades.Shrines.DuplicatorUpgrade;
-import upgradeableevents.eventupgrades.Shrines.FountainOfCurseRemovalUpgrade;
-import upgradeableevents.eventupgrades.Shrines.NoteForYourselfUpgrade;
 import upgradeableevents.interfaces.AbstractEventUpgrade;
 
 import java.lang.reflect.Constructor;
@@ -34,6 +28,10 @@ public class UpgradeEventManager {
         UPGRADE_MAPPINGS.put(Bonfire.class, BonfireUpgrade.class);
         UPGRADE_MAPPINGS.put(FountainOfCurseRemoval.class, FountainOfCurseRemovalUpgrade.class);
         UPGRADE_MAPPINGS.put(Duplicator.class, DuplicatorUpgrade.class);
+        UPGRADE_MAPPINGS.put(GoldShrine.class, GoldShrineUpgrade.class);
+        UPGRADE_MAPPINGS.put(Lab.class, LabUpgrade.class);
+        UPGRADE_MAPPINGS.put(GremlinMatchGame.class, GremlinMatchUpgrade.class);
+        UPGRADE_MAPPINGS.put(AccursedBlacksmith.class, AccursedBlacksmithUpgrade.class);
     }
 
     public static void registerEventUpgrade(Class<? extends AbstractEvent> eventClass,

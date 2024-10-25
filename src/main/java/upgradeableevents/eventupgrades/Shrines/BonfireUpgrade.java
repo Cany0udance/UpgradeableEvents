@@ -3,12 +3,17 @@ package upgradeableevents.eventupgrades.Shrines;
 import basemod.BaseMod;
 import basemod.ReflectionHacks;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.events.AbstractEvent;
 import com.megacrit.cardcrawl.events.shrines.Bonfire;
+import com.megacrit.cardcrawl.localization.UIStrings;
 import upgradeableevents.interfaces.AbstractEventUpgrade;
 import upgradeableevents.interfaces.UpgradeCondition;
 
+import static upgradeableevents.UpgradeableEvents.makeID;
+
 public class BonfireUpgrade extends AbstractEventUpgrade {
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString(makeID("BonfireUpgrade"));
     private static final int CHOOSE_SCREEN_NUM = 1;
     private boolean isUpgraded = false;
     private AbstractCard firstCard = null;
@@ -44,6 +49,6 @@ public class BonfireUpgrade extends AbstractEventUpgrade {
     @Override
     protected void rebuildOptions() {
         Bonfire bonfireEvent = (Bonfire)event;
-        bonfireEvent.imageEventText.updateDialogOption(0, Bonfire.OPTIONS[2] + " (Choose TWO cards!)");
+        bonfireEvent.imageEventText.updateDialogOption(0, Bonfire.OPTIONS[2] + uiStrings.TEXT[0]);
     }
 }

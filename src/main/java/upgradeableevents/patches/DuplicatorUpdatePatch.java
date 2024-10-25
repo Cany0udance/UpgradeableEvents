@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.shrines.Duplicator;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 import upgradeableevents.UpgradeEventManager;
+import upgradeableevents.eventupgrades.Shrines.AccursedBlacksmithUpgrade;
 import upgradeableevents.eventupgrades.Shrines.DuplicatorUpgrade;
 import upgradeableevents.interfaces.AbstractEventUpgrade;
 
@@ -21,7 +22,7 @@ public class DuplicatorUpdatePatch {
     public static void Insert(Duplicator __instance) {
         if (!addedSecondCopy && !AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
             AbstractEventUpgrade currentUpgrade = UpgradeEventManager.getCurrentUpgrade();
-            if (currentUpgrade instanceof DuplicatorUpgrade) {
+            if (currentUpgrade instanceof DuplicatorUpgrade && ((DuplicatorUpgrade)currentUpgrade).isUpgraded()) {
                 // Create a second copy of the selected card
                 AbstractCard original = AbstractDungeon.gridSelectScreen.selectedCards.get(0);
                 AbstractCard secondCopy = original.makeStatEquivalentCopy();

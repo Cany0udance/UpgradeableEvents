@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.vfx.AbstractGameEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.PurgeCardEffect;
 import javassist.CtBehavior;
 import upgradeableevents.UpgradeEventManager;
+import upgradeableevents.eventupgrades.Shrines.DuplicatorUpgrade;
 import upgradeableevents.eventupgrades.Shrines.FountainOfCurseRemovalUpgrade;
 import upgradeableevents.interfaces.AbstractEventUpgrade;
 import upgradeableevents.util.ButtonEffectHelper;
@@ -22,7 +23,7 @@ public class FountainButtonEffectPatch {
     )
     public static void Insert(FountainOfCurseRemoval __instance, int buttonPressed) {
         AbstractEventUpgrade currentUpgrade = UpgradeEventManager.getCurrentUpgrade();
-        if (currentUpgrade instanceof FountainOfCurseRemovalUpgrade && buttonPressed == 0) {
+        if (currentUpgrade instanceof FountainOfCurseRemovalUpgrade && ((FountainOfCurseRemovalUpgrade)currentUpgrade).isUpgraded() && buttonPressed == 0) {
             // Count new PurgeCardEffects that we haven't counted before
             int newCursesRemoved = 0;
 

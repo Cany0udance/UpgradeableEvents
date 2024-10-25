@@ -1,16 +1,41 @@
 {
-  "${modID}:Example": {
+  "${modID}:BonfireUpgrade": {
     "TEXT": [
-      "This is",
-      "an array of Strings."
-    ],
-    "EXTRA_TEXT": [
-      "This is another",
-      "array of Strings."
-    ],
-    "TEXT_DICT": {
-      "This": "Contains pairs of Strings, used to get values based on keys.",
-      "This is a key": "This is a value."
-    }
+      " (Choose TWO cards!)"
+    ]
+  },
+  "${modID}:DuplicatorUpgrade": {
+    "TEXT": [
+      "[Pray] #gDuplicate #ga #gcard #gin #gyour #gdeck #gtwice."
+    ]
+  },
+  "${modID}:FountainOfCurseRemovalUpgrade": {
+    "TEXT": [
+      " Gain #b",
+      " #gMax #gHP for each."
+    ]
+  },
+  "${modID}:NoteForYourselfUpgrade": {
+    "TEXT": [
+      " #gand #g",
+      " #gGold"
+    ]
+  },
+  "${modID}:GoldShrineUpgrade": {
+    "TEXT": [
+      " #g25%: #gObtain #ga #gRare #gRelic.",
+      "[Desecrate] #gGain #g275 #gGold. #rBecome #rCursed #r- #rClumsy."
+    ]
+  },
+  "${modID}:LabUpgrade": {
+    "TEXT": [
+      " #gGain #ga #gPotion #gslot."
+    ]
+  },
+  "${modID}:AccursedBlacksmithUpgrade": {
+    "TEXT": [
+      "[Forge] #gUpgrade #g2 #grandom #gcards #gin #gyour #gdeck.",
+      "[Rummage] #gObtain #ga #gspecial #gRelic. #r50%: #rBecome #rCursed #r- #rPain."
+    ]
   }
 }
