@@ -1,6 +1,7 @@
 package upgradeableevents.eventupgrades.Shrines;
 
 import basemod.ReflectionHacks;
+import com.megacrit.cardcrawl.cards.curses.Pain;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractEvent;
@@ -52,7 +53,7 @@ public class AccursedBlacksmithUpgrade extends AbstractEventUpgrade {
         }
 
         // Update second option to show 50% curse chance
-        blacksmithEvent.imageEventText.setDialogOption(uiStrings.TEXT[1], CardLibrary.getCopy("Pain"), new WarpedTongs());
+        blacksmithEvent.imageEventText.setDialogOption(uiStrings.TEXT[1], CardLibrary.getCopy(Pain.ID), new WarpedTongs());
 
         // Leave third option unchanged
         blacksmithEvent.imageEventText.updateDialogOption(2, AccursedBlacksmith.OPTIONS[2]);

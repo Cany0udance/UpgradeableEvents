@@ -37,5 +37,42 @@
       "[Forge] #gUpgrade #g2 #grandom #gcards #gin #gyour #gdeck.",
       "[Rummage] #gObtain #ga #gspecial #gRelic. #r50%: #rBecome #rCursed #r- #rPain."
     ]
+  },
+  "${modID}:PurificationShrineUpgrade": {
+    "TEXT": [
+      "[Pray] #gRemove #g2 #gcards #gfrom #gyour #gdeck."
+    ]
+  },
+  "${modID}:TransmogrifierUpgrade": {
+    "TEXT": [
+      "[Pray] #gTransform #ga #gcard #ginto #ga #gRare #gcard."
+    ]
+  },
+  "${modID}:UpgradeShrineUpgrade": {
+    "TEXT": [
+      "[Pray] #gUpgrade #ga #gcard, #gthen #gUpgrade #ga #grandom #gcard."
+    ]
+  },
+  "${modID}:WeMeetAgainUpgrade": {
+    "TEXT": [
+      "[Get Potion] #gObtain ",
+      "[Get Gold] #gObtain #g",
+      "[Get Card] #gObtain ",
+      " #gGold"
+    ]
+  },
+  "${modID}:WomanInBlueUpgrade": {
+    "TEXT": [
+      "[Buy 2 Potions] #y",
+      "[Buy 4 Potions] #y",
+      "[Buy 6 Potions] #y"
+    ]
+  },
+  "${modID}:DesignerUpgrade": {
+    "TEXT": [
+      "[Adjustments] ",
+      "[Clean Up] ",
+      "[Full Service] "
+    ]
   }
 }

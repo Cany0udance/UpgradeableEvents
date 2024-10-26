@@ -32,11 +32,23 @@ public class UpgradeEventManager {
         UPGRADE_MAPPINGS.put(Lab.class, LabUpgrade.class);
         UPGRADE_MAPPINGS.put(GremlinMatchGame.class, GremlinMatchUpgrade.class);
         UPGRADE_MAPPINGS.put(AccursedBlacksmith.class, AccursedBlacksmithUpgrade.class);
+        UPGRADE_MAPPINGS.put(PurificationShrine.class, PurificationShrineUpgrade.class);
+        UPGRADE_MAPPINGS.put(Transmogrifier.class, TransmogrifierUpgrade.class);
+        UPGRADE_MAPPINGS.put(UpgradeShrine.class, UpgradeShrineUpgrade.class);
+        UPGRADE_MAPPINGS.put(WeMeetAgain.class, WeMeetAgainUpgrade.class);
+        UPGRADE_MAPPINGS.put(GremlinWheelGame.class, GremlinWheelUpgrade.class);
+        UPGRADE_MAPPINGS.put(WomanInBlue.class, WomanInBlueUpgrade.class);
+        UPGRADE_MAPPINGS.put(Designer.class, DesignerEventUpgrade.class);
     }
 
     public static void registerEventUpgrade(Class<? extends AbstractEvent> eventClass,
                                             Class<? extends AbstractEventUpgrade> upgradeClass) {
         UPGRADE_MAPPINGS.put(eventClass, upgradeClass);
+    }
+
+    public static void forceCheckUpgradeAvailability() {
+        eventUpgradeAvailable = true;
+        createNewUpgradeInstance(AbstractDungeon.getCurrRoom().event);
     }
 
     public static boolean canUpgradeCurrentEvent() {
@@ -45,11 +57,12 @@ public class UpgradeEventManager {
         AbstractEvent currentEvent = AbstractDungeon.getCurrRoom().event;
         if (currentEvent == null) return false;
 
-        // Check if we need to create a new upgrade instance
-        if (currentUpgrade == null || currentUpgrade.event != currentEvent) {
+        if (currentEvent instanceof GremlinWheelGame) {
             createNewUpgradeInstance(currentEvent);
         }
-
+        else if (currentUpgrade == null || currentUpgrade.event != currentEvent) {
+            createNewUpgradeInstance(currentEvent);
+        }
         return currentUpgrade != null && currentUpgrade.canBeUpgraded();
     }
 
@@ -80,10 +93,14 @@ public class UpgradeEventManager {
         eventUpgradeAvailable = value;
     }
 
+
+    // Potentially useless method?
+    /*
     public static void reset() {
         eventUpgradeAvailable = false;
         currentUpgrade = null;
     }
+     */
 
     public static void playUpgradeVfx() {
         AbstractDungeon.effectsQueue.add(new EventUpgradeShineEffect(

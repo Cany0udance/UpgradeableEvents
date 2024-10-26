@@ -1,4 +1,4 @@
-package upgradeableevents.patches;
+package upgradeableevents.patches.Shrines;
 
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.events.shrines.GremlinMatchGame;

@@ -1,4 +1,4 @@
-package upgradeableevents.patches;
+package upgradeableevents.patches.Shrines;
 
 import basemod.ReflectionHacks;
 import com.evacipated.cardcrawl.modthespire.lib.*;

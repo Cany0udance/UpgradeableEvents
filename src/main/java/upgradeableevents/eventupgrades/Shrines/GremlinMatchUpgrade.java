@@ -1,10 +1,8 @@
 package upgradeableevents.eventupgrades.Shrines;
 
 import basemod.ReflectionHacks;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.events.AbstractEvent;
 import com.megacrit.cardcrawl.events.shrines.GremlinMatchGame;
-import com.megacrit.cardcrawl.localization.UIStrings;
 import upgradeableevents.UpgradeEventManager;
 import upgradeableevents.interfaces.AbstractEventUpgrade;
 import upgradeableevents.interfaces.UpgradeCondition;
