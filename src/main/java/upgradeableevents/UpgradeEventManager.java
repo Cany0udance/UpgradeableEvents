@@ -4,11 +4,11 @@ import basemod.BaseMod;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractEvent;
-import com.megacrit.cardcrawl.events.exordium.Cleric;
+import com.megacrit.cardcrawl.events.exordium.*;
 import com.megacrit.cardcrawl.events.shrines.*;
 import upgradeableevents.effects.EventUpgradeShineEffect;
+import upgradeableevents.eventupgrades.Exordium.*;
 import upgradeableevents.eventupgrades.Shrines.*;
-import upgradeableevents.eventupgrades.ClericEventUpgrade;
 import upgradeableevents.interfaces.AbstractEventUpgrade;
 
 import java.lang.reflect.Constructor;
@@ -23,7 +23,6 @@ public class UpgradeEventManager {
 
     static {
         // Register all event upgrades here
-        UPGRADE_MAPPINGS.put(Cleric.class, ClericEventUpgrade.class);
         UPGRADE_MAPPINGS.put(NoteForYourself.class, NoteForYourselfUpgrade.class);
         UPGRADE_MAPPINGS.put(Bonfire.class, BonfireUpgrade.class);
         UPGRADE_MAPPINGS.put(FountainOfCurseRemoval.class, FountainOfCurseRemovalUpgrade.class);
@@ -39,6 +38,20 @@ public class UpgradeEventManager {
         UPGRADE_MAPPINGS.put(GremlinWheelGame.class, GremlinWheelUpgrade.class);
         UPGRADE_MAPPINGS.put(WomanInBlue.class, WomanInBlueUpgrade.class);
         UPGRADE_MAPPINGS.put(Designer.class, DesignerEventUpgrade.class);
+        UPGRADE_MAPPINGS.put(FaceTrader.class, FaceTraderUpgrade.class);
+
+
+        UPGRADE_MAPPINGS.put(BigFish.class, BigFishUpgrade.class);
+        UPGRADE_MAPPINGS.put(Cleric.class, ClericEventUpgrade.class);
+        UPGRADE_MAPPINGS.put(DeadAdventurer.class, DeadAdventurerUpgrade.class);
+        UPGRADE_MAPPINGS.put(GoldenIdolEvent.class, GoldenIdolUpgrade.class);
+        UPGRADE_MAPPINGS.put(Mushrooms.class, MushroomsUpgrade.class);
+        UPGRADE_MAPPINGS.put(LivingWall.class, LivingWallUpgrade.class);
+        UPGRADE_MAPPINGS.put(ScrapOoze.class, ScrapOozeUpgrade.class);
+        UPGRADE_MAPPINGS.put(ShiningLight.class, ShiningLightUpgrade.class);
+        UPGRADE_MAPPINGS.put(Sssserpent.class, SssserpentUpgrade.class);
+        UPGRADE_MAPPINGS.put(GoopPuddle.class, GoopPuddleUpgrade.class);
+        UPGRADE_MAPPINGS.put(GoldenWing.class, GoldenWingUpgrade.class);
     }
 
     public static void registerEventUpgrade(Class<? extends AbstractEvent> eventClass,

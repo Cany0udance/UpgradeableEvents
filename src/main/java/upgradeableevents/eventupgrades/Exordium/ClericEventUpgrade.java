@@ -1,4 +1,4 @@
-package upgradeableevents.eventupgrades;
+package upgradeableevents.eventupgrades.Exordium;
 
 import basemod.ReflectionHacks;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;

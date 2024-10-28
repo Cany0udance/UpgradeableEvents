@@ -74,5 +74,43 @@
       "[Clean Up] ",
       "[Full Service] "
     ]
+  },
+  "${modID}:FaceTraderUpgrade": {
+    "TEXT": [
+      "[Trade] #g70%: #gGood #gFace. #r30%: #rBad #rFace."
+    ]
+  },
+  "${modID}:BigFishUpgrade": {
+    "TEXT": [
+      "[Box] #gObtain #g2 #gRelics. #rBecome #rCursed #r- #rRegret."
+    ]
+  },
+  "${modID}:MushroomsUpgrade": {
+    "TEXT": [
+      " #gHP. #rBecome #rCursed #r- #rClumsy."
+    ]
+  },
+  "${modID}:GoldenIdolUpgrade": {
+    "TEXT": [
+      "[Take] #gObtain #gGolden #gIdol."
+    ]
+  },
+  "${modID}:LivingWallUpgrade": {
+    "TEXT": [
+      "[Forget] #gRemove #g3 #grandom #gcards #gfrom #gyour #gdeck.",
+      "[Change] #gTransform #g3 #grandom #gcards #gin #gyour #gdeck.",
+      "[Grow] #gUpgrade #g3 #grandom #gcards #gin #gyour #gdeck."
+    ]
+  },
+  "${modID}:ShiningLightUpgrade": {
+    "TEXT": [
+      "[Enter] #gUpgrade #g3 #grandom #gcards. #rLose #r"
+    ]
+  },
+  "${modID}:SssserpentUpgrade": {
+    "TEXT": [
+      "[Agree] #gObtain #gMembership #gCard. #rBecome #rCursed #r- #rDoubt.",
+      "[Agree] #gObtain #gThe #gCourier. #rBecome #rCursed #r- #rDoubt."
+    ]
   }
 }

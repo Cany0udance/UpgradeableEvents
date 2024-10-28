@@ -1,6 +1,6 @@
 
 
-package upgradeableevents.patches;
+package upgradeableevents.patches.Exordium;
 
 
 import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;

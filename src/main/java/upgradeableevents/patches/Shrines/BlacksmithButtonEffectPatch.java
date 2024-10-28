@@ -12,8 +12,6 @@ import com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect;
 import javassist.CtBehavior;
 import upgradeableevents.UpgradeEventManager;
 import upgradeableevents.eventupgrades.Shrines.AccursedBlacksmithUpgrade;
-import upgradeableevents.eventupgrades.Shrines.BonfireUpgrade;
-import upgradeableevents.eventupgrades.Shrines.NoteForYourselfUpgrade;
 import upgradeableevents.interfaces.AbstractEventUpgrade;
 import upgradeableevents.util.ButtonEffectHelper;
 
