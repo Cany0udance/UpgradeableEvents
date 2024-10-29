@@ -4,11 +4,13 @@ import basemod.BaseMod;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractEvent;
+import com.megacrit.cardcrawl.events.city.*;
 import com.megacrit.cardcrawl.events.exordium.*;
 import com.megacrit.cardcrawl.events.shrines.*;
 import upgradeableevents.effects.EventUpgradeShineEffect;
 import upgradeableevents.eventupgrades.Exordium.*;
 import upgradeableevents.eventupgrades.Shrines.*;
+import upgradeableevents.eventupgrades.TheCity.*;
 import upgradeableevents.interfaces.AbstractEventUpgrade;
 
 import java.lang.reflect.Constructor;
@@ -40,7 +42,6 @@ public class UpgradeEventManager {
         UPGRADE_MAPPINGS.put(Designer.class, DesignerEventUpgrade.class);
         UPGRADE_MAPPINGS.put(FaceTrader.class, FaceTraderUpgrade.class);
 
-
         UPGRADE_MAPPINGS.put(BigFish.class, BigFishUpgrade.class);
         UPGRADE_MAPPINGS.put(Cleric.class, ClericEventUpgrade.class);
         UPGRADE_MAPPINGS.put(DeadAdventurer.class, DeadAdventurerUpgrade.class);
@@ -52,6 +53,25 @@ public class UpgradeEventManager {
         UPGRADE_MAPPINGS.put(Sssserpent.class, SssserpentUpgrade.class);
         UPGRADE_MAPPINGS.put(GoopPuddle.class, GoopPuddleUpgrade.class);
         UPGRADE_MAPPINGS.put(GoldenWing.class, GoldenWingUpgrade.class);
+
+        UPGRADE_MAPPINGS.put(BackToBasics.class, BackToBasicsUpgrade.class);
+        UPGRADE_MAPPINGS.put(DrugDealer.class, DrugDealerUpgrade.class);
+        UPGRADE_MAPPINGS.put(Colosseum.class, ColosseumUpgrade.class);
+        UPGRADE_MAPPINGS.put(Ghosts.class, GhostsUpgrade.class);
+        UPGRADE_MAPPINGS.put(CursedTome.class, CursedTomeUpgrade.class);
+        UPGRADE_MAPPINGS.put(ForgottenAltar.class, ForgottenAltarUpgrade.class);
+        UPGRADE_MAPPINGS.put(TheJoust.class, TheJoustUpgrade.class);
+        UPGRADE_MAPPINGS.put(KnowingSkull.class, KnowingSkullUpgrade.class);
+        UPGRADE_MAPPINGS.put(TheLibrary.class, TheLibraryUpgrade.class);
+        UPGRADE_MAPPINGS.put(MaskedBandits.class, MaskedBanditsUpgrade.class);
+        UPGRADE_MAPPINGS.put(TheMausoleum.class, TheMausoleumUpgrade.class);
+        UPGRADE_MAPPINGS.put(Nest.class, NestUpgrade.class);
+        UPGRADE_MAPPINGS.put(Nloth.class, NlothUpgrade.class);
+        UPGRADE_MAPPINGS.put(Beggar.class, BeggarUpgrade.class);
+        UPGRADE_MAPPINGS.put(Addict.class, AddictUpgrade.class);
+        UPGRADE_MAPPINGS.put(Vampires.class, VampiresUpgrade.class);
+
+
     }
 
     public static void registerEventUpgrade(Class<? extends AbstractEvent> eventClass,

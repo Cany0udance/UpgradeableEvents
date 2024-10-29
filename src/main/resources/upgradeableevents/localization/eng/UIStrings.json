@@ -112,5 +112,74 @@
       "[Agree] #gObtain #gMembership #gCard. #rBecome #rCursed #r- #rDoubt.",
       "[Agree] #gObtain #gThe #gCourier. #rBecome #rCursed #r- #rDoubt."
     ]
+  },
+  "${modID}:BackToBasicsUpgrade": {
+    "TEXT": [
+      " #gGain #g50 #gGold.",
+      "[Simplicity] #gUpgrade #gall #gBasic #gand #gRare #gcards."
+    ]
+  },
+  "${modID}:DrugDealerUpgrade": {
+    "TEXT": [
+      "[Test J.A.X.] #gGet #gJAXXED.",
+      "[Become Test Subject] #gTransform #g3 #gcards.",
+      "[Ingest Mutagens] #gObtain #gVajra #gand #ga #gspecial #grelic."
+    ]
+  },
+  "${modID}:ColosseumUpgrade": {
+    "TEXT": [
+      "[VICTORY] A powerful fight with many rewards."
+    ]
+  },
+  "${modID}:ForgottenAltarUpgrade": {
+    "TEXT": [
+      "[Offer: Golden Idol] #gObtain #ga #gspecial #gRelic.",
+      "[Desecrate] #rLose #r",
+      " #rMax #rHP."
+    ]
+  },
+  "${modID}:TheJoustUpgrade": {
+    "TEXT": [
+      " #yGold - #g90%: #gwin #g",
+      " #yGold - #g10%: #gwin #g"
+    ]
+  },
+  "${modID}:TheLibraryUpgrade": {
+    "TEXT": [
+      "[Read] #gChoose #g1 #gof #g20 #gUpgraded #gcards #gto #gadd #gto #gyour #gdeck.",
+      " #gGain #g5 #gMax #gHP."
+    ]
+  },
+  "${modID}:MaskedBanditsUpgrade": {
+    "TEXT": [
+      "[Pay] #rLose #r3 #rGold."
+    ]
+  },
+  "${modID}:TheMausoleumUpgrade": {
+    "TEXT": [
+      "[Open Coffin] #gObtain #ga #gRare #gRelic. #r"
+    ]
+  },
+  "${modID}:NestUpgrade": {
+    "TEXT": [
+      "[Stay in Line] #gObtain Ritual Dagger+. #rLose #r"
+    ]
+  },
+  "${modID}:NlothUpgrade": {
+    "TEXT": [
+      "[Take Offer] #gObtain ",
+      " #gand #ga #gspecial #grelic."
+    ]
+  },
+  "${modID}:AddictUpgrade": {
+    "TEXT": [
+      "[Rob] #gObtain #ga #gShop #gRelic. #rBecome #rCursed #r- #rShame."
+    ]
+  },
+  "${modID}:VampiresUpgrade": {
+    "TEXT": [
+      "[Accept] #gReplace #gall Strikes #gwith Bites. #rLose #r",
+      "] #gReplace #gall Strikes #gwith Bites."
+    ]
   }
 }
