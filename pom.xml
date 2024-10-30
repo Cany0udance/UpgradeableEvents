@@ -67,6 +67,34 @@
             <scope>system</scope>
             <systemPath>${steam.path}/workshop/content/646570/1609158507/StSLib.jar</systemPath>
         </dependency>
+        <dependency>
+            <groupId>betterthird</groupId>
+            <artifactId>betterThird</artifactId>
+            <version>2.4.0</version>
+            <scope>system</scope>
+            <systemPath>${steam.path}/workshop/content/646570/2202946081/betterThirdChoice.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>betterAltar</groupId>
+            <artifactId>betterAltar</artifactId>
+            <version>2.4.0</version>
+            <scope>system</scope>
+            <systemPath>${steam.path}/workshop/content/646570/2175759321/betterAltar.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>betterSkull</groupId>
+            <artifactId>betterSkull</artifactId>
+            <version>2.4.0</version>
+            <scope>system</scope>
+            <systemPath>${steam.path}/workshop/content/646570/2160544401/betterSkull.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>betterMatch</groupId>
+            <artifactId>betterMatch</artifactId>
+            <version>2.4.0</version>
+            <scope>system</scope>
+            <systemPath>${steam.path}/workshop/content/646570/2085989942/betterMatch.jar</systemPath>
+        </dependency>
     </dependencies>
 
 

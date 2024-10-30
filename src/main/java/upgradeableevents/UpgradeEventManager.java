@@ -1,6 +1,7 @@
 package upgradeableevents;
 
 import basemod.BaseMod;
+import basemod.ReflectionHacks;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractEvent;
@@ -9,6 +10,7 @@ import com.megacrit.cardcrawl.events.city.*;
 import com.megacrit.cardcrawl.events.exordium.*;
 import com.megacrit.cardcrawl.events.shrines.*;
 import upgradeableevents.effects.EventUpgradeShineEffect;
+import upgradeableevents.eventupgrades.BetterEvents.*;
 import upgradeableevents.eventupgrades.Exordium.*;
 import upgradeableevents.eventupgrades.Shrines.*;
 import upgradeableevents.eventupgrades.TheBeyond.*;
@@ -81,6 +83,75 @@ public class UpgradeEventManager {
         UPGRADE_MAPPINGS.put(SensoryStone.class, SensoryStoneUpgrade.class);
         UPGRADE_MAPPINGS.put(TombRedMask.class, TombRedMaskUpgrade.class);
         UPGRADE_MAPPINGS.put(WindingHalls.class, WindingHallsUpgrade.class);
+
+        // Register optional mod event upgrades
+        registerBetterThirdUpgrades();
+    }
+
+    private static void registerBetterThirdUpgrades() {
+        try {
+            Class<?> betterGoopEventClass = Class.forName("betterThird.events.BetterGoopEvent");
+            UPGRADE_MAPPINGS.put(
+                    (Class<? extends AbstractEvent>) betterGoopEventClass,
+                    BetterGoopUpgrade.class
+            );
+
+            Class<?> betterNestEventClass = Class.forName("betterThird.events.BetterNestEvent");
+            UPGRADE_MAPPINGS.put(
+                    (Class<? extends AbstractEvent>) betterNestEventClass,
+                    BetterNestUpgrade.class
+            );
+
+            Class<?> betterPortalEventClass = Class.forName("betterThird.events.BetterPortalEvent");
+            UPGRADE_MAPPINGS.put(
+                    (Class<? extends AbstractEvent>) betterPortalEventClass,
+                    BetterPortalUpgrade.class
+            );
+
+            Class<?> betterScrapEventClass = Class.forName("betterThird.events.BetterScrapEvent");
+            UPGRADE_MAPPINGS.put(
+                    (Class<? extends AbstractEvent>) betterScrapEventClass,
+                    BetterScrapUpgrade.class
+            );
+
+            Class<?> betterSerpentEventClass = Class.forName("betterThird.events.BetterSerpentEvent");
+            UPGRADE_MAPPINGS.put(
+                    (Class<? extends AbstractEvent>) betterSerpentEventClass,
+                    BetterSerpentUpgrade.class
+            );
+
+            Class<?> betterShiningEventClass = Class.forName("betterThird.events.BetterShiningEvent");
+            UPGRADE_MAPPINGS.put(
+                    (Class<? extends AbstractEvent>) betterShiningEventClass,
+                    BetterShiningUpgrade.class
+            );
+
+            Class<?> betterWritingEventClass = Class.forName("betterThird.events.BetterWritingEvent");
+            UPGRADE_MAPPINGS.put(
+                    (Class<? extends AbstractEvent>) betterWritingEventClass,
+                    BetterWritingUpgrade.class
+            );
+
+            Class<?> betterAltarEventClass = Class.forName("betterAltar.events.BetterAltarEvent");
+            UPGRADE_MAPPINGS.put(
+                    (Class<? extends AbstractEvent>) betterAltarEventClass,
+                    BetterAltarUpgrade.class
+            );
+
+            Class<?> betterSkullEventClass = Class.forName("betterSkull.events.BetterSkullEvent");
+            UPGRADE_MAPPINGS.put(
+                    (Class<? extends AbstractEvent>) betterSkullEventClass,
+                    BetterSkullUpgrade.class
+            );
+
+            Class<?> betterMatchEventClass = Class.forName("betterMatch.events.BetterMatchEvent");
+            UPGRADE_MAPPINGS.put(
+                    (Class<? extends AbstractEvent>) betterMatchEventClass,
+                    BetterMatchUpgrade.class
+            );
+        } catch (ClassNotFoundException e) {
+            // Skip registration if mod not found
+        }
     }
 
     public static void registerEventUpgrade(Class<? extends AbstractEvent> eventClass,
@@ -116,8 +187,30 @@ public class UpgradeEventManager {
         }
 
         try {
-            Constructor<?> constructor = upgradeClass.getConstructor(event.getClass());
-            currentUpgrade = (AbstractEventUpgrade) constructor.newInstance(event);
+            // First try to get the specific constructor
+            Constructor<?> constructor = null;
+            try {
+                constructor = upgradeClass.getConstructor(event.getClass());
+            } catch (NoSuchMethodException e) {
+                // If that fails, try to get the AbstractEvent constructor
+                try {
+                    constructor = upgradeClass.getConstructor(AbstractEvent.class);
+                } catch (NoSuchMethodException e2) {
+                    // If that fails too, try no-args constructor as last resort
+                    constructor = upgradeClass.getConstructor();
+                }
+            }
+
+            if (constructor != null) {
+                if (constructor.getParameterCount() > 0) {
+                    currentUpgrade = (AbstractEventUpgrade) constructor.newInstance(event);
+                } else {
+                    // No-args constructor
+                    currentUpgrade = (AbstractEventUpgrade) constructor.newInstance();
+                    // Need to set the event after construction
+                    ReflectionHacks.setPrivate(currentUpgrade, AbstractEventUpgrade.class, "event", event);
+                }
+            }
         } catch (Exception e) {
             BaseMod.logger.error("Failed to create upgrade instance for: " + event.getClass().getName());
             e.printStackTrace();

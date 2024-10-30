@@ -227,5 +227,38 @@
       "[Retrace Your Steps] #gGain #g",
       " #gMax #gHP."
     ]
+  },
+  "${modID}:BetterGoopUpgrade": {
+    "TEXT": [
+      "[Gather Gold] #gGain #g",
+      " #gGold.",
+      "[Search Adventurers] #gObtain #|#98FB98Slime #|#98FB98Relic. #rLose #r11 #rHP.",
+      "[Leave]"
+    ]
+  },
+  "${modID}:BetterNestUpgrade": {
+    "TEXT": [
+      "[Stay in Line] #gObtain Ritual Dagger+. #rLose #r"
+    ]
+  },
+  "${modID}:BetterPortalUpgrade": {
+    "TEXT": [
+      "[Enter the Portal] Heal to full HP, obtain all Keys, and IMMEDIATELY travel to the boss.",
+      "[Swap the Crystal] #|#FF0000Enter #|#FF7F00a #|#FFFF00portal #|#00FF00of #|#0000FFyour #|#8B00FFChoosing!"
+    ]
+  },
+  "${modID}:BetterShiningUpgrade": {
+    "TEXT": [
+      "[Enter] #gUpgrade #g3 #grandom #gcards. #rLose #r",
+      "[Enter] #g65%: #gObtain #|#D4AF37"
+    ]
+  },
+  "${modID}:BetterAltarUpgrade": {
+    "TEXT": [
+      "[Offer: Golden Idol] #gObtain #ga #gspecial #gRelic.",
+      "[Offer: Blood Vial] #rLose #rBlood #rVial. #gObtain #ga #gspecial #gRelic.",
+      "[Desecrate] #rLose #r",
+      " #rMax #rHP."
+    ]
   }
 }

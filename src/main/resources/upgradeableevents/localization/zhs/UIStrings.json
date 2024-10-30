@@ -1,0 +1,264 @@
+{
+  "${modID}:BonfireUpgrade": {
+    "TEXT": [
+      " (选择两张牌！)"
+    ]
+  },
+  "${modID}:DuplicatorUpgrade": {
+    "TEXT": [
+      "[祈祷] #g复制 #g牌组中的 #g一张牌 #g两次。"
+    ]
+  },
+  "${modID}:FountainOfCurseRemovalUpgrade": {
+    "TEXT": [
+      " 获得 #b",
+      " 点 #g最大生命值。"
+    ]
+  },
+  "${modID}:NoteForYourselfUpgrade": {
+    "TEXT": [
+      " #g和 #g",
+      " #g金币"
+    ]
+  },
+  "${modID}:GoldShrineUpgrade": {
+    "TEXT": [
+      " #g25%： #g获得一个 #g稀有遗物。",
+      "[亵渎] #g获得 #g275 #g金币。 #r被诅咒 #r- #r笨拙。"
+    ]
+  },
+  "${modID}:LabUpgrade": {
+    "TEXT": [
+      " #g获得一个 #g药水栏位。"
+    ]
+  },
+  "${modID}:AccursedBlacksmithUpgrade": {
+    "TEXT": [
+      "[锻造] #g升级牌组中的 #g2 #g张随机牌。",
+      "[翻找] #g获得一个 #g特殊遗物。 #r50%： #r被诅咒 #r- #r疼痛。"
+    ]
+  },
+  "${modID}:PurificationShrineUpgrade": {
+    "TEXT": [
+      "[祈祷] #g从牌组中 #g移除 #g2 #g张牌。"
+    ]
+  },
+  "${modID}:TransmogrifierUpgrade": {
+    "TEXT": [
+      "[祈祷] #g将一张牌 #g转化为 #g一张 #g稀有牌。"
+    ]
+  },
+  "${modID}:UpgradeShrineUpgrade": {
+    "TEXT": [
+      "[祈祷] #g升级一张牌，#g然后 #g升级一张 #g随机牌。"
+    ]
+  },
+  "${modID}:WeMeetAgainUpgrade": {
+    "TEXT": [
+      "[获得药水] #g获得 ",
+      "[获得金币] #g获得 #g",
+      "[获得牌] #g获得 ",
+      " #g金币"
+    ]
+  },
+  "${modID}:WomanInBlueUpgrade": {
+    "TEXT": [
+      "[购买2瓶药水] #y",
+      "[购买4瓶药水] #y",
+      "[购买6瓶药水] #y"
+    ]
+  },
+  "${modID}:DesignerUpgrade": {
+    "TEXT": [
+      "[调整] ",
+      "[清理] ",
+      "[全套服务] "
+    ]
+  },
+  "${modID}:FaceTraderUpgrade": {
+    "TEXT": [
+      "[交易] #g70%： #g好面具。 #r30%： #r坏面具。"
+    ]
+  },
+  "${modID}:BigFishUpgrade": {
+    "TEXT": [
+      "[盒子] #g获得 #g2个 #g遗物。 #r被诅咒 #r- #r后悔。"
+    ]
+  },
+  "${modID}:MushroomsUpgrade": {
+    "TEXT": [
+      " #g生命。 #r被诅咒 #r- #r笨拙。"
+    ]
+  },
+  "${modID}:GoldenIdolUpgrade": {
+    "TEXT": [
+      "[拿取] #g获得 #g金神像。"
+    ]
+  },
+  "${modID}:LivingWallUpgrade": {
+    "TEXT": [
+      "[遗忘] #g从牌组中 #g移除 #g3张 #g随机牌。",
+      "[改变] #g转化 #g牌组中的 #g3张 #g随机牌。",
+      "[生长] #g升级 #g牌组中的 #g3张 #g随机牌。"
+    ]
+  },
+  "${modID}:ShiningLightUpgrade": {
+    "TEXT": [
+      "[进入] #g升级 #g3张 #g随机牌。 #r失去 #r"
+    ]
+  },
+  "${modID}:SssserpentUpgrade": {
+    "TEXT": [
+      "[同意] #g获得 #g会员卡。 #r被诅咒 #r- #r疑虑。",
+      "[同意] #g获得 #g快递员。 #r被诅咒 #r- #r疑虑。"
+    ]
+  },
+  "${modID}:BackToBasicsUpgrade": {
+    "TEXT": [
+      " #g获得 #g50 #g金币。",
+      "[简化] #g升级所有 #g基础牌 #g和 #g稀有牌。"
+    ]
+  },
+  "${modID}:DrugDealerUpgrade": {
+    "TEXT": [
+      "[测试J.A.X.] #g获得 #g兴奋剂。",
+      "[成为实验对象] #g转化 #g3张牌。",
+      "[注射突变剂] #g获得 #g金刚杵 #g和一个 #g特殊 #g遗物。"
+    ]
+  },
+  "${modID}:ColosseumUpgrade": {
+    "TEXT": [
+      "[胜利] 一场艰难的战斗，丰厚的奖励。"
+    ]
+  },
+  "${modID}:ForgottenAltarUpgrade": {
+    "TEXT": [
+      "[献祭：金神像] #g获得一个 #g特殊 #g遗物。",
+      "[亵渎] #r失去 #r",
+      " #r点最大生命。"
+    ]
+  },
+  "${modID}:TheJoustUpgrade": {
+    "TEXT": [
+      " #y金币 - #g90%：赢得 #g",
+      " #y金币 - #g10%：赢得 #g"
+    ]
+  },
+  "${modID}:TheLibraryUpgrade": {
+    "TEXT": [
+      "[阅读] #g从 #g20张 #g已升级的牌中 #g选择 #g1张 #g加入牌组。",
+      " #g获得 #g5点 #g最大生命。"
+    ]
+  },
+  "${modID}:MaskedBanditsUpgrade": {
+    "TEXT": [
+      "[支付] #r失去 #r3 #r金币。"
+    ]
+  },
+  "${modID}:TheMausoleumUpgrade": {
+    "TEXT": [
+      "[打开棺材] #g获得一个 #g稀有遗物。 #r"
+    ]
+  },
+  "${modID}:NestUpgrade": {
+    "TEXT": [
+      "[排队等候] #g获得 #g仪式匕首+。 #r失去 #r"
+    ]
+  },
+  "${modID}:NlothUpgrade": {
+    "TEXT": [
+      "[接受提议] #g获得 ",
+      " #g和一个 #g特殊 #g遗物。"
+    ]
+  },
+  "${modID}:AddictUpgrade": {
+    "TEXT": [
+      "[抢劫] #g获得一个 #g商店遗物。 #r被诅咒 #r- #r羞耻。"
+    ]
+  },
+  "${modID}:VampiresUpgrade": {
+    "TEXT": [
+      "[接受] #g将所有打击牌替换为撕咬。 #r失去 #r",
+      "] #g将所有打击牌替换为撕咬。"
+    ]
+  },
+  "${modID}:FallingUpgrade": {
+    "TEXT": [
+      "[打击] #g获得 ",
+      "[着陆] #g获得 ",
+      "[引导] #g获得 "
+    ]
+  },
+  "${modID}:MindBloomUpgrade": {
+    "TEXT": [
+      "[我是战争] #r与 #r第一幕的 #r一个首领战斗。 #g获得一个 #g首领遗物。",
+      "[我已觉醒] #g恢复所有生命值。 #g升级所有牌。 #r你将无法再恢复生命。",
+      "[我很富有] #g获得 #g999 #g金币。 #r被诅咒 #r- #r2张腐朽。",
+      "[我很健康] #g恢复所有生命值。 #g获得 #g15点 #g最大生命。 #r被诅咒 #r- #r疑虑。"
+    ]
+  },
+  "${modID}:MoaiHeadUpgrade": {
+    "TEXT": [
+      "[跳入] #g恢复所有生命值。"
+    ]
+  },
+  "${modID}:SecretPortalUpgrade": {
+    "TEXT": [
+      "[进入传送门] 恢复所有生命值，获得所有钥匙，并立即前往首领。"
+    ]
+  },
+  "${modID}:SensoryStoneUpgrade": {
+    "TEXT": [
+      "[回忆] #g将 #g1张 #g已升级的 #g无色牌 #g加入你的牌组。",
+      "[回忆] #g将 #g2张 #g已升级的 #g无色牌 #g加入你的牌组。 #r失去 #r",
+      "[回忆] #g将 #g3张 #g已升级的 #g无色牌 #g加入你的牌组。 #r失去 #r"
+    ]
+  },
+  "${modID}:TombRedMaskUpgrade": {
+    "TEXT": [
+      "[戴上红面具] #g获得 #g333 #g金币。",
+      "[献祭：",
+      " 金币] #g获得一个 #g遗物。"
+    ]
+  },
+  "${modID}:WindingHallsUpgrade": {
+    "TEXT": [
+      "[拥抱疯狂] #g获得 #g2张疯狂。",
+      "[重走旧路] #g获得 #g",
+      " #g点最大生命。"
+    ]
+  },
+  "${modID}:BetterGoopUpgrade": {
+    "TEXT": [
+      "[收集金币] #g获得 #g",
+      " #g金币。",
+      "[搜索冒险者] #g获得 #|#98FB98史莱姆 #|#98FB98遗物。 #r失去 #r11点 #r生命。",
+      "[离开]"
+    ]
+  },
+  "${modID}:BetterNestUpgrade": {
+    "TEXT": [
+      "[排队等候] #g获得仪式匕首+。 #r失去 #r"
+    ]
+  },
+  "${modID}:BetterPortalUpgrade": {
+    "TEXT": [
+      "[进入传送门] 恢复所有生命值，获得所有钥匙，并立即前往首领。",
+      "[更换水晶] #|#FF0000进入 #|#FF7F00一个 #|#FFFF00你 #|#00FF00选择的 #|#0000FF传送 #|#8B00FF门！"
+    ]
+  },
+  "${modID}:BetterShiningUpgrade": {
+    "TEXT": [
+      "[进入] #g升级 #g3张 #g随机牌。 #r失去 #r",
+      "[进入] #g65%： #g获得 #|#D4AF37"
+    ]
+  },
+  "${modID}:BetterAltarUpgrade": {
+    "TEXT": [
+      "[献祭：金神像] #g获得一个 #g特殊 #g遗物。",
+      "[献祭：血瓶] #r失去血瓶。 #g获得一个 #g特殊 #g遗物。",
+      "[亵渎] #r失去 #r",
+      " #r点最大生命。"
+    ]
+  }
+}
