@@ -4,12 +4,14 @@ import basemod.BaseMod;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractEvent;
+import com.megacrit.cardcrawl.events.beyond.*;
 import com.megacrit.cardcrawl.events.city.*;
 import com.megacrit.cardcrawl.events.exordium.*;
 import com.megacrit.cardcrawl.events.shrines.*;
 import upgradeableevents.effects.EventUpgradeShineEffect;
 import upgradeableevents.eventupgrades.Exordium.*;
 import upgradeableevents.eventupgrades.Shrines.*;
+import upgradeableevents.eventupgrades.TheBeyond.*;
 import upgradeableevents.eventupgrades.TheCity.*;
 import upgradeableevents.interfaces.AbstractEventUpgrade;
 
@@ -71,7 +73,14 @@ public class UpgradeEventManager {
         UPGRADE_MAPPINGS.put(Addict.class, AddictUpgrade.class);
         UPGRADE_MAPPINGS.put(Vampires.class, VampiresUpgrade.class);
 
-
+        UPGRADE_MAPPINGS.put(Falling.class, FallingUpgrade.class);
+        UPGRADE_MAPPINGS.put(MindBloom.class, MindBloomUpgrade.class);
+        UPGRADE_MAPPINGS.put(MoaiHead.class, MoaiHeadUpgrade.class);
+        UPGRADE_MAPPINGS.put(MysteriousSphere.class, MysteriousSphereUpgrade.class);
+        UPGRADE_MAPPINGS.put(SecretPortal.class, SecretPortalUpgrade.class);
+        UPGRADE_MAPPINGS.put(SensoryStone.class, SensoryStoneUpgrade.class);
+        UPGRADE_MAPPINGS.put(TombRedMask.class, TombRedMaskUpgrade.class);
+        UPGRADE_MAPPINGS.put(WindingHalls.class, WindingHallsUpgrade.class);
     }
 
     public static void registerEventUpgrade(Class<? extends AbstractEvent> eventClass,

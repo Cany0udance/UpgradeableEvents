@@ -181,5 +181,51 @@
       "[Accept] #gReplace #gall Strikes #gwith Bites. #rLose #r",
       "] #gReplace #gall Strikes #gwith Bites."
     ]
+  },
+  "${modID}:FallingUpgrade": {
+    "TEXT": [
+      "[Strike] #gObtain ",
+      "[Land] #gObtain ",
+      "[Channel] #gObtain "
+    ]
+  },
+  "${modID}:MindBloomUpgrade": {
+    "TEXT": [
+      "[I am War] #rFight #ra #rBoss #rfrom #rAct #r1. #gObtain #ga #gBoss #gRelic.",
+      "[I am Awake] #gHeal #gto #gfull #gHP. #gUpgrade #gall #gCards. #rYou #rcan #rno #rlonger #rheal.",
+      "[I am Rich] #gGain #g999 #gGold. #rCursed #r- #r2 #rDecay.",
+      "[I am Healthy] #gHeal #gto #gfull #gHP. #gGain #g15 #gMax #gHP. #rCursed #r- #rDoubt."
+    ]
+  },
+  "${modID}:MoaiHeadUpgrade": {
+    "TEXT": [
+      "[Jump Inside] #gHeal #gto #gfull #gHP."
+    ]
+  },
+  "${modID}:SecretPortalUpgrade": {
+    "TEXT": [
+      "[Enter the Portal] Heal to full HP, obtain all Keys, and IMMEDIATELY travel to the boss."
+    ]
+  },
+  "${modID}:SensoryStoneUpgrade": {
+    "TEXT": [
+      "[Recall] #gAdd #g1 #gUpgraded #gColorless #gcard #gto #gyour #gdeck.",
+      "[Recall] #gAdd #g2 #gUpgraded #gColorless #gcards #gto #gyour #gdeck. #rLose #r",
+      "[Recall] #gAdd #g3 #gUpgrade #gColorless #gcards #gto #gyour #gdeck. #rLose #r"
+    ]
+  },
+  "${modID}:TombRedMaskUpgrade": {
+    "TEXT": [
+      "[Don the Red Mask] #gGain #g333 #gGold.",
+      "[Offer: ",
+      " Gold] #gObtain #ga #gRelic."
+    ]
+  },
+  "${modID}:WindingHallsUpgrade": {
+    "TEXT": [
+      "[Embrace Madness] #gReceive #g2 Madness.",
+      "[Retrace Your Steps] #gGain #g",
+      " #gMax #gHP."
+    ]
   }
 }
