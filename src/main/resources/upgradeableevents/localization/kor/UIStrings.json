@@ -1,0 +1,264 @@
+{
+  "${modID}:BonfireUpgrade": {
+    "TEXT": [
+      " (카드를 두 장 선택합니다!)"
+    ]
+  },
+  "${modID}:DuplicatorUpgrade": {
+    "TEXT": [
+      "[기도] #g덱에서 #g카드를 #g하나 #g선택해 #g두 #g번 #g복제합니다."
+    ]
+  },
+  "${modID}:FountainOfCurseRemovalUpgrade": {
+    "TEXT": [
+      " 각 저주마다 #b",
+      " #g최대 #g체력을 얻습니다."
+    ]
+  },
+  "${modID}:NoteForYourselfUpgrade": {
+    "TEXT": [
+      " , #g그리고 #g골드 #g",
+      " "
+    ]
+  },
+  "${modID}:GoldShrineUpgrade": {
+    "TEXT": [
+      " #g25%: #g희귀 #g유물을 #g획득합니다.",
+      "[신성 모독] #g골드를 #g275 #g받습니다. #r저주를 #r받습니다 #r- #r서투름."
+    ]
+  },
+  "${modID}:LabUpgrade": {
+    "TEXT": [
+      " #g포션 #g슬롯을 #g얻는다."
+    ]
+  },
+  "${modID}:AccursedBlacksmithUpgrade": {
+    "TEXT": [
+      "[재련] #g덱에 #g있는 #g무작위 #g2 #g장의 #g카드를 #g강화합니다.",
+      "[뒤지기] #g특별한 #g유물을 #g획득합니다. #r50%: #r저주를 #r받습니다 #r- #r고통."
+    ]
+  },
+  "${modID}:PurificationShrineUpgrade": {
+    "TEXT": [
+      "[기도] #g덱에서 #g카드를 #g2 #g장 #g제거합니다."
+    ]
+  },
+  "${modID}:TransmogrifierUpgrade": {
+    "TEXT": [
+      "[기도] #g카드 #g1 #g장을 #g희귀 #g카드로 #g변화시킵니다."
+    ]
+  },
+  "${modID}:UpgradeShrineUpgrade": {
+    "TEXT": [
+      "[기도] #g카드 #g1 #g장을 #g강화하고, #g무작위 #g카드를 #g강화합니다."
+    ]
+  },
+  "${modID}:WeMeetAgainUpgrade": {
+    "TEXT": [
+      "[포션] #g잃지 #g않고 #g얻습니다 - ",
+      "[골드] #g잃지 #g않고 #g얻습니다 - #g",
+      "[카드] #g잃지 #g않고 #g얻습니다 - ",
+      " #g골드"
+    ]
+  },
+  "${modID}:WomanInBlueUpgrade": {
+    "TEXT": [
+      "[포션을 2개 구매] #y",
+      "[포션을 4개 구매] #y",
+      "[포션을 6개 구매] #y"
+    ]
+  },
+  "${modID}:DesignerUpgrade": {
+    "TEXT": [
+      "[교정] ",
+      "[정돈한다] ",
+      "[풀 서비스] "
+    ]
+  },
+  "${modID}:FaceTraderUpgrade": {
+    "TEXT": [
+      "[거래한다] #g70%: #g좋은 #g얼굴. #r30%: #r나쁜 #r얼굴."
+    ]
+  },
+  "${modID}:BigFishUpgrade": {
+    "TEXT": [
+      "[상자] #g유물을 #g2 #g개 #g획득합니다. #r저주를 #r받습니다 #r- #r후회."
+    ]
+  },
+  "${modID}:MushroomsUpgrade": {
+    "TEXT": [
+      " #g회복합니다. #r저주를 #r받습니다 #r- #r서투름."
+    ]
+  },
+  "${modID}:GoldenIdolUpgrade": {
+    "TEXT": [
+      "[가져간다] #g황금 #g우상을 #g획득합니다."
+    ]
+  },
+  "${modID}:LivingWallUpgrade": {
+    "TEXT": [
+      "[망각] #g덱에서 #g무작위 #g카드를 #g3장 #g제거합니다.",
+      "[변화] #g덱에서 #g무작위 #g카드를 #g3장 #g변화시킵니다.",
+      "[성장] #g덱에서 #g무작위 #g카드를 #g3장 #g강화합니다."
+    ]
+  },
+  "${modID}:ShiningLightUpgrade": {
+    "TEXT": [
+      "[들어간다] #g무작위의 #g카드 #g3장을 #g강화합니다. #r체력을 #r"
+    ]
+  },
+  "${modID}:SssserpentUpgrade": {
+    "TEXT": [
+      "[동의한다] #g멤버십 #g카드를 #g얻습니다. #r저주를 #r받습니다 #r- #r의심.",
+      "[동의한다] #g배달원을 #g얻습니다. #r저주를 #r받습니다 #r- #r의심."
+    ]
+  },
+  "${modID}:BackToBasicsUpgrade": {
+    "TEXT": [
+      " #g골드를 #g50 #g얻습니다.",
+      "[단순] #g모든 #g시작 #g카드와 #g희귀 #g카드를 #g강화합니다."
+    ]
+  },
+  "${modID}:DrugDealerUpgrade": {
+    "TEXT": [
+      "[J.A.X.를 시험한다] #gJ.A.X #g를 #g얻습니다.",
+      "[실험의 피험체가 된다] #g3장의 #g카드를 #g변화시킵니다.",
+      "[돌연변이 인자를 삼킨다] #g금강저와 #g특별한 #g유물을 #g획득합니다."
+    ]
+  },
+  "${modID}:ColosseumUpgrade": {
+    "TEXT": [
+      "[승리] 많은 보상을 위한 강력한 적과의 전투."
+    ]
+  },
+  "${modID}:ForgottenAltarUpgrade": {
+    "TEXT": [
+      "[제물: 황금 우상] #g특별한 #g유물을 #g획득합니다.",
+      "[희생] #r최대 #r체력을 #r",
+      " #r잃습니다."
+    ]
+  },
+  "${modID}:TheJoustUpgrade": {
+    "TEXT": [
+      " #y골드를 #y건다 - #g90%: #g골드를 #g",
+      " #y골드를 #y건다 - #g10%: #g골드를 #g"
+    ]
+  },
+  "${modID}:TheLibraryUpgrade": {
+    "TEXT": [
+      "[읽는다] #g강화된 #g20장 #g중에 #g1장의 #g카드를 #g선택해 #g가져갑니다.",
+      " #g최대 #g체력이 #g5 #g증가합니다."
+    ]
+  },
+  "${modID}:MaskedBanditsUpgrade": {
+    "TEXT": [
+      "[지불] #r골드를 #r3 #r잃습니다."
+    ]
+  },
+  "${modID}:TheMausoleumUpgrade": {
+    "TEXT": [
+      "[열어본다] #g희귀 #g유물을 #g획득합니다. #r"
+    ]
+  },
+  "${modID}:NestUpgrade": {
+    "TEXT": [
+      "[줄에 서 있는다] 의식용 단검+ #g카드를 #g획득합니다. #r체력을 #r"
+    ]
+  },
+  "${modID}:NlothUpgrade": {
+    "TEXT": [
+      "[제물] ",
+      "와 #g특별한 #g유물을 #g획득합니다."
+    ]
+  },
+  "${modID}:AddictUpgrade": {
+    "TEXT": [
+      "[강탈한다] #g상점 #g유물을 #g획득합니다. #r저주를 #r받습니다. #r- #r수치."
+    ]
+  },
+  "${modID}:VampiresUpgrade": {
+    "TEXT": [
+      "[승낙] #g모든 타격을 흡혈로 #g교체합니다. #r체력을 #r",
+      "] #g모든 타격을 흡혈로 #g교체합니다."
+    ]
+  },
+  "${modID}:FallingUpgrade": {
+    "TEXT": [
+      "[검술] #g다음을 #g얻습니다 - ",
+      "[착지] #g다음을 #g얻습니다 - ",
+      "[마법] #g다음을 #g얻습니다 - "
+    ]
+  },
+  "${modID}:MindBloomUpgrade": {
+    "TEXT": [
+      "[나는 전쟁이다] #r1막의 #r보스와 #r전투. #g보스 #g유물을 #g얻습니다.",
+      "[나는 깨어있다] #g체력을 #g모두 #g회복하고 #g모든 #g카드를 #g강화합니다. #r더 #r이상 #r회복할 #r수 #r없습니다.",
+      "[나는 부유하다] #g골드를 #g999 #g얻습니다. #r저주를 #r2장 #r받습니다. #r- #r부패.",
+      "[나는 건강하다] #g체력을 #g모두 #g회복하고 #g최대 #g체력을 #g15 #g얻습니다. #r저주를 #r받습니다. #r- #r의심."
+    ]
+  },
+  "${modID}:MoaiHeadUpgrade": {
+    "TEXT": [
+      "[안으로 들어간다] #g체력을 #g전부 #g회복."
+    ]
+  },
+  "${modID}:SecretPortalUpgrade": {
+    "TEXT": [
+      "[포탈에 들어간다] 체력을 모두 회복하고, 모든 열쇠를 얻고, 즉시 보스를 조우합니다."
+    ]
+  },
+  "${modID}:SensoryStoneUpgrade": {
+    "TEXT": [
+      "[회상] #g1장의 #g강화된 #g무색 #g카드 #b보상을 #g획득합니다.",
+      "[회상] #g2장의 #g강화된 #g무색 #g카드 #b보상을 #g획득합니다. #r체력을 #r",
+      "[회상] #g3장의 #g강화된 #g무색 #g카드 #b보상을 #g획득합니다. #r체력을 #r"
+    ]
+  },
+  "${modID}:TombRedMaskUpgrade": {
+    "TEXT": [
+      "[붉은 가면을 쓴다] #g333 #g골드를 #g획득합니다.",
+      "[제물: ",
+      " 골드] #g유물을 #g하나 #g얻습니다."
+    ]
+  },
+  "${modID}:WindingHallsUpgrade": {
+    "TEXT": [
+      "[광기를 받아들인다] #g광기 #g카드를 #g2 #g장 #g획득합니다.",
+      "[왔던 길로 돌아간다] #g최대 #g체력을 #g",
+      " #g얻습니다."
+    ]
+  },
+  "${modID}:BetterGoopUpgrade": {
+    "TEXT": [
+      "[골드를 챙긴다] #g골드를 #g",
+      " #g획득합니다.",
+      "[모험가를 찾는다] #|#98FB98슬라임 #|#98FB98유물을 #g얻습니다. #r체력을 #r11 #r잃습니다.",
+      "[떠난다]"
+    ]
+  },
+  "${modID}:BetterNestUpgrade": {
+    "TEXT": [
+      "[줄에 서 있는다] 의식용 단검+을 #g획득합니다. #r체력을 #r"
+    ]
+  },
+  "${modID}:BetterPortalUpgrade": {
+    "TEXT": [
+      "[포탈에 들어간다] 체력을 모두 회복하고, 모든 열쇠를 얻고, 즉시 보스를 조우합니다.",
+      "[수정을 교체한다] #|#0000FF당신이 #|#8B00FF고르는 #|#FFFF00포탈에 #|#FF0000입장합니다!"
+    ]
+  },
+  "${modID}:BetterShiningUpgrade": {
+    "TEXT": [
+      "[들어간다] #g무작위의 #g카드 #g3장을 #g강화합니다. #r체력을 #r",
+      "[들어간다] #g65%: #g다음을 #g얻습니다 - #|#D4AF37"
+    ]
+  },
+  "${modID}:BetterAltarUpgrade": {
+    "TEXT": [
+      "[제물: 황금 우상] #g특별한 #g유물을 #g획득합니다.",
+      "[제물: 피가 담긴 병] #r피가 #r담긴 #r병을 #r잃습니다. #g특별한 #g유물을 #g획득합니다.",
+      "[희생] #r최대 #r체력을 #r",
+      " #r잃습니다."
+    ]
+  }
+}
