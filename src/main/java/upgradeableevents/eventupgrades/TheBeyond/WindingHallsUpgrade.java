@@ -60,7 +60,7 @@ public class WindingHallsUpgrade extends AbstractEventUpgrade {
 
         // Second option - Full heal with Writhe
         hallsEvent.imageEventText.setDialogOption(
-                WindingHalls.OPTIONS[3] + healAmount + WindingHalls.OPTIONS[5],
+                WindingHalls.OPTIONS[3] + uiStrings.TEXT[3] + WindingHalls.OPTIONS[5],
                 CardLibrary.getCopy("Writhe")
         );
 

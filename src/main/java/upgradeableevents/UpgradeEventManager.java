@@ -21,7 +21,6 @@ import java.lang.reflect.Constructor;
 import java.util.HashMap;
 import java.util.Map;
 
-
 public class UpgradeEventManager {
     private static boolean eventUpgradeAvailable = false;
     private static final Map<Class<? extends AbstractEvent>, Class<? extends AbstractEventUpgrade>> UPGRADE_MAPPINGS = new HashMap<>();

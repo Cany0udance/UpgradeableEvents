@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.AbstractEvent;
 import com.megacrit.cardcrawl.events.city.MaskedBandits;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import upgradeableevents.interfaces.AbstractEventUpgrade;
 import upgradeableevents.interfaces.UpgradeCondition;
 
@@ -22,6 +23,10 @@ public class MaskedBanditsUpgrade extends AbstractEventUpgrade {
     private static class MaskedBanditsUpgradeCondition implements UpgradeCondition {
         @Override
         public boolean canUpgrade(AbstractEvent event) {
+            if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) {
+                return false;
+            }
+
             MaskedBandits banditsEvent = (MaskedBandits)event;
             Enum<?> curScreen = ReflectionHacks.getPrivate(banditsEvent, MaskedBandits.class, "screen");
             return "INTRO".equals(curScreen.name());

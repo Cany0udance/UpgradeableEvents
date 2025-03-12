@@ -225,7 +225,8 @@
     "TEXT": [
       "[Embrace Madness] #gReceive #g2 Madness.",
       "[Retrace Your Steps] #gGain #g",
-      " #gMax #gHP."
+      " #gMax #gHP.",
+      "to #gfull"
     ]
   },
   "${modID}:BetterGoopUpgrade": {
